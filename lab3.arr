@@ -1,4 +1,4 @@
-use context starter2024
+use context dcic2024
 include csv
 include data-source
 
@@ -107,11 +107,18 @@ end
 something.length()
 
 #Find median rate
-
+median-rate = median(something, "rate") 
 
 
 #Find mode rate
+mode-rate = modes(something, "rate")
 
 
 
 #Order rate column in ascending and descending to find min/max
+
+#sorted ascending rates
+sorted-rates-asc = order-by(something, "rate", true)
+
+#Descending rates sorted
+sorted-rates-desc = order-by(something, "rate", false)
